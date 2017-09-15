@@ -1,6 +1,10 @@
 [
- {
-   "repository": "kernel_huawei_angler",
-   "target_path": "kernel/huawei/angler"
- }
+  {
+    "repository": "kernel_huawei_angler",
+    "target_path": "kernel/huawei/angler"
+  },
+  {
+    "repository": "proprietary_vendor_huawei",
+    "target_path": "vendor/huawei"
+  }
 ]
