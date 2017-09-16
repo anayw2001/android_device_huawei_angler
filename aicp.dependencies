@@ -1,10 +1,12 @@
 [
   {
-    "repository": "kernel_huawei_angler",
-    "target_path": "kernel/huawei/angler"
+    "repository": "AICP/kernel_huawei_angler",
+    "target_path": "kernel/huawei/angler",
+    "branch":      "o8.0"
   },
   {
-    "repository": "proprietary_vendor_huawei",
-    "target_path": "vendor/huawei"
+    "repository": "AICP/proprietary_vendor_huawei",
+    "target_path": "vendor/huawei",
+    "branch":      "o8.0"
   }
 ]
