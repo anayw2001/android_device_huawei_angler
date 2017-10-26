@@ -346,6 +346,7 @@ service rmt_storage /vendor/bin/rmt_storage
     user root
     group system wakelock
     writepid /dev/cpuset/system-background/tasks
+    shutdown critical
 
 service qseecomd /vendor/bin/qseecomd
     class core
@@ -485,7 +486,7 @@ service mcfg-sh /system/bin/init.mcfg.sh
    oneshot
 
 service radio-sh /system/bin/init.radio.sh
-    class late_start
+    class main
     user radio
     group root radio
     oneshot
