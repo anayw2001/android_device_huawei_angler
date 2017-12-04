@@ -1,5 +1,5 @@
 #
-# Copyright 2012 The Android Open Source Project
+# Copyright 2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,13 +25,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
-
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    charger
-
-PRODUCT_COPY_FILES += \
-    device/huawei/angler/kernel:kernel
 
 PRODUCT_NAME := omni_angler
 PRODUCT_DEVICE := angler
