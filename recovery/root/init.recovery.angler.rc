@@ -34,6 +34,28 @@ service keystore_auth /sbin/keystore_auth
     group root
     seclabel u:r:recovery:s0
 
+service keymaster-3-0 /sbin/android.hardware.keymaster@3.0-service
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+service gatekeeper-1-0 /sbin/android.hardware.gatekeeper@1.0-service
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+service prepdecrypt /sbin/prepdecrypt.sh
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
+on init
+    start prepdecrypt
+
 on fs
     wait /dev/block/platform/soc.0/f9824900.sdhci
     symlink /dev/block/platform/soc.0/f9824900.sdhci /dev/block/bootdevice
@@ -45,3 +67,6 @@ on fs
     start hwservicemanager
     start sbinqseecomd
     start servicemanager
+    start gatekeeper-1-0
+    start keymaster-3-0
+
