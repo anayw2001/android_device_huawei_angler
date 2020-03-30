@@ -16,4 +16,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_angler.mk \
-    $(LOCAL_DIR)/carbon_angler.mk
