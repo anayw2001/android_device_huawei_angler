@@ -2,10 +2,6 @@ allow hal_memtrack_default hal_configstore_default:file read;
 allow hal_memtrack_default hwservicemanager:file read;
 allow hal_memtrack_default idmap:file read;
 allow hal_memtrack_default servicemanager:file read;
-<<<<<<< HEAD
 allow hal_memtrack_default system_app:file { read open getattr };
 allow hal_memtrack_default system_app:dir open;
-=======
-allow hal_memtrack_default system_app:file read;
->>>>>>> b93bfe0... angler-common: enforcing bringup for 10
 allow hal_memtrack_default vndservicemanager:file read;
