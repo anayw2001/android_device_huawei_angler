@@ -127,7 +127,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/angler
 
 BOARD_SEPOLICY_DIRS += \
-	device/huawei/angler/sepolicy
+	device/huawei/angler/sepolicy/vendor
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/huawei/angler/sepolicy/private
 
 TARGET_USES_64_BIT_BINDER := true
 
