@@ -18,6 +18,7 @@
 # are also specific to angler devices
 #
 # Everything in this directory will become public
+TARGET_DISABLES_GAPPS := true
 
 # Enable support for chinook sensorhub
 TARGET_USES_CHINOOK_SENSORHUB := false
